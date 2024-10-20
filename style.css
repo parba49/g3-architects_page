@@ -76,6 +76,68 @@ nav a {
 .banner img{
     max-width: 100%;
 }
+
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+.imgsection{
+    display: grid;
+    grid-template:1fr 1fr/1fr 1fr ;
+    grid-gap: 24px;
+   
+    width: 60%;
+    margin-top: 85px;
+    margin-left: 280px;
+  
+
+}
+.imgcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detailsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 100px;
+   
+  
+}
+.detail1{
+    width: 100%;
+   
+}
+.detailhead{
+    width: 100%;
+}
+
+.a{
+    font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.x{
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
@@ -85,6 +147,22 @@ nav a {
     }
     .banner-title {
         margin-top: 50px;
+    }
+
+    .imgcontainer{
+        
+        grid-template-columns:576px;
+    }
+    .imgsection{
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+        grid-template-columns:550px ;
+    }
+    .detailsection{
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 550px;
     }
 }
 
@@ -98,4 +176,10 @@ nav a {
     .banner-title {
         margin-top: 50px;
     }
+
+    .imgsection{
+       
+        margin-left: 0px;
+        width: 100%;
+       
 }
