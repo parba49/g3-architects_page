@@ -7,11 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="">
         <nav>
             <h3 class="nav-title">G3 Architects</h3>
             <ul>
@@ -33,7 +35,8 @@
         </div>
     </header>
 
-    <section>
+    <section class="">
+        
         <div class="imgcontainer">
             <div class="imgsection">
                 <div class="team1">
@@ -70,35 +73,35 @@
         </div>    
     </section>
 
-    <section class="flex  flex-col-reverse ">
+    <section class="flex  flex-col-reverse lg:grid lg:grid-cols-2 max-w-[984px] mx-auto ">
        <div class="p-3">
 
-        <div>
+        <div class="pl-7 lg:mt-[90px]">
             <h1 class="font-bold text-[45px]">Features you will <br> love & enjoy</h1>
 
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+            <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
         </div>
 
-        <div>
+        <div class=" p-14 md:grid md:grid-cols-2 lg:grid-cols-1 lg:pb-[80px] ">
             <div>
-                <h3>Dexktop & Mobile Version</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                <h3 class="font-semibold text-xl">Dexktop & Mobile Version</h3>
+                <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
             </div>
 
             <div>
-              <h3>Drag & Drop Builder</h3>
+              <h3 class="font-semibold text-xl">Drag & Drop Builder</h3>
 
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+              <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
             </div>
 
             <div>
-                <h3>Awesome Modern Design</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                <h3 class="font-semibold text-xl">Awesome Modern Design</h3>
+                <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
             </div>
 
             <div>
-                <h3>Super Easy to Edit</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                <h3 class="font-semibold text-xl">Super Easy to Edit</h3>
+                <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
             </div>
 
         </div>
@@ -108,17 +111,76 @@
        </div>
 
   <!-- picture -->
-       <div class="relative grid items-center mx-auto">
+       <div class="relative grid items-center mx-auto w-full ">
         
-            <img class="w-10/12 pb-7 mx-auto" src="images/architect.png" alt="">
+            <img class="w-3/4 h-3/4 pb-7 mx-auto" src="images/architect.png" alt="">
        
 
-        <div class="w-[150px] h-[70px] bg-[#FF900E] absolute bottom-0 left-0 text-center grid items-center  text-[#FFFFFF] mb-0 ">
-            <h2 class="font-bold text-[30px]">10+Year</h2>
-            <p class="font-medium text-[15px] pb-1">Experience</p>
+        <div class="w-[150px] h-[90px] bg-[#FF900E] absolute bottom-[70px] left-8 text-center grid items-center  text-[#FFFFFF] mb-0 lg:bottom-24 md:bottom-[90px] md:w-[200px] md:h-[120px]">
+            <p class="font-bold text-[30px] pt-2 md:pt-4">10+Year</p>
+            <p class="font-medium text-[15px] pb-5 md:pb-8">Experience</p>
         </div>
 
        </div>
     </section>
+
+    <section>
+        <div class="max-w-[984px] mx-auto">
+            <div class="p-5">
+                <h1 class="font-bold text-[45px]">Some Facts</h1>
+
+                <p class="text-base font-normal text-[#727272]">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+
+            </div>
+            <div class=" grid grid-cols-2 gap-2 gap-y-4 p-10 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-6">
+
+                <div class=" w-[200.83px] h-[200.83px] border-2 border-red-400 text-center pt-10 ">
+                    <img class="w-[45.22px] mx-auto " src="images/icons/ribon.png" alt="">
+                    <h2 class="font-semibold text-[45px]">54</h2>
+                    <p class="font-semibold text-[20px] text-[#727272]">Awards Winnings</p>
+                </div>
+
+                <div class=" w-[200.83px] h-[200.83px] border-2 border-red-400 text-center pt-10 ">
+                    <img class="w-[45.22px] mx-auto " src="images/icons/projects.png" alt="">
+                    <h2 class="font-semibold text-[45px]">1458</h2>
+                    <p class="font-semibold text-[20px] text-[#727272]">Project Finished</p>
+                </div>
+
+                <div class=" w-[200.83px] h-[200.83px] border-2 border-red-400 text-center pt-10 ">
+                    <img class="w-[45.22px] mx-auto " src="images/icons/customers.png" alt="">
+                    <h2 class="font-semibold text-[45px]">590</h2>
+                    <p class="font-semibold text-[20px] text-[#727272]">Clients Worked</p>
+                </div>
+
+                <div class=" w-[200.83px] h-[200.83px] border-2 border-red-400 text-center pt-10 ">
+                    <img class="w-[45.22px] mx-auto " src="images/icons/email.png" alt="">
+                    <h2 class="font-semibold text-[45px]">22578</h2>
+                    <p class="font-semibold text-[20px] text-[#727272]">Email Send</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+        <nav class="grid  gap-4">
+         <h1 class="font-bold text-[45px] mb-4">Our Sponspors</h1>
+
+         <p class="font-semibold text-[16px] text-[#727272]">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+        </nav>
+        <nav class="mb-[100px]">
+          <div class="grid  gap-12 grid-cols-3 items-center text-center md:grid-cols-4 lg:grid-cols-5">
+
+            <img class="w-[160px]" src="images/sponsors/spotify.png" alt="">
+            <img class="w-[160px]" src="images/sponsors/amazon.png" alt="">
+            <img class="w-[160px]" src="images/sponsors/google.png" alt="">
+            <img class="w-[160px]" src="images/sponsors/telerama.png" alt="">
+            <img class="w-[160px]"  src="images/sponsors/figma.png" alt="">
+            
+          </div>
+        </nav >
+        <aside>
+          <p>All rights reserved copyright@2023 startup landing page design</p>
+        </aside>
+      </footer>
 </body>
 </html>
